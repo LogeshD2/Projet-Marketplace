@@ -1,0 +1,116 @@
+.Vendeur h1 {
+  display: flex;
+  justify-content: center;
+}
+
+.Vendeur h2 {
+  text-decoration: none;
+  margin-left: 60px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.Vendeur hr {
+  width: 75%;
+  margin-top: 100px;
+}
+
+.Vendeur .treasury {
+  text-align: center;
+  background-color: #f2f2f2;
+  max-width: 20%;
+  margin: 0 auto;
+}
+.Vendeur .treasury b {
+  font-size: 15px;
+}
+
+.Vendeur .addAddress {
+  text-align: center;
+}
+
+.Vendeur .deliveryAddress {
+  align-items: center;
+  justify-content: center;
+  /* Définir une largeur maximale pour le point de retrait */
+  overflow: hidden; /* Masquer le texte qui dépasse la largeur maximale */
+  text-overflow: ellipsis; /* Ajouter des points de suspension à la fin du texte qui dépasse la largeur maximale */
+  white-space: nowrap; /* Empêcher le texte de se retourner à la ligne */
+  background-color: #f5f5f5;
+  text-align: center;
+}
+
+.Vendeur .deliveryAddress h2 {
+  text-align: center;
+}
+
+.Vendeur .productList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.Vendeur .soldHistory {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.Vendeur .contractList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.Vendeur .contract {
+  text-align: center;
+  margin: 1em;
+  /* width: 30%; */
+  background-color: rgb(189, 183, 183);
+  background-size: cover; /* redimensionne l'image pour couvrir tout le fond */
+  padding: 20px; /* ajoute un espacement autour du contenu du contrat */
+  border: 1px solid gray; /* ajoute une bordure grise autour du contrat */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* ajoute une ombre portée pour donner de la profondeur */
+  font-family: "Times New Roman", Times, serif; /* utilise une police de caractères qui convient mieux à l'apparence d'un document */
+  font-size: 16px; /* ajuste la taille de police */
+  line-height: 1.5; /* ajuste l'espacement entre les lignes */
+  color: #333; /* utilise une couleur de texte qui convient mieux à l'apparence d'un document */
+}
+
+.Vendeur .contractExt {
+  text-align: center;
+  margin: 1em;
+  /* width: 30%; */
+  background-color: rgb(189, 183, 183);
+  background-size: cover; /* redimensionne l'image pour couvrir tout le fond */
+  padding: 20px; /* ajoute un espacement autour du contenu du contrat */
+  border: 1px solid gray; /* ajoute une bordure grise autour du contrat */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* ajoute une ombre portée pour donner de la profondeur */
+  font-family: "Times New Roman", Times, serif; /* utilise une police de caractères qui convient mieux à l'apparence d'un document */
+  font-size: 16px; /* ajuste la taille de police */
+  line-height: 1.5; /* ajuste l'espacement entre les lignes */
+  color: #333; /* utilise une couleur de texte qui convient mieux à l'apparence d'un document */
+  max-width: 600px;
+}
+
+.Vendeur .contractExt ul {
+  margin: 0; /* suppression des marges par défaut pour la liste */
+  padding: 0; /* suppression des espaces intérieurs par défaut pour la liste */
+  list-style-type: none; /* suppression des puces de la liste */
+}
+
+.Vendeur .contractExt li {
+  margin-bottom: 5px; /* espace de 5px entre chaque élément de la liste */
+}
+
+.Vendeur .contract ul {
+  margin: 0; /* suppression des marges par défaut pour la liste */
+  padding: 0; /* suppression des espaces intérieurs par défaut pour la liste */
+  list-style-type: none; /* suppression des puces de la liste */
+}
+
+.Vendeur .contract li {
+  margin-bottom: 5px; /* espace de 5px entre chaque élément de la liste */
+}

@@ -1,0 +1,147 @@
+{
+  "treasury": {
+    "turnover": 365.99,
+    "potentialTurnover": 465.56
+  },
+  "products": [
+    {
+      "id": 1,
+      "productName": "Premier Produit",
+      "image": "https://ekit.co.uk/GalleryEntries/eCommerce_solutions_and_services/MedRes_Product-presentation-2.jpg?q=27012012153123",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0,
+      "description": "Ceci est une description du produit",
+      "category": "Nom de ma catégorie",
+      "weight": 90
+    },
+    {
+      "id": 2,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0,
+      "description": "Ceci est une description du produit",
+      "category": "Nom de ma catégorie",
+      "weight": 90
+    },
+    {
+      "id": 3,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0,
+      "description": "Ceci est une description du produit",
+      "category": "Nom de ma catégorie",
+      "weight": 90
+    },
+    {
+      "id": 4,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0,
+      "description": "Ceci est une description du produit",
+      "category": "Nom de ma catégorie",
+      "weight": 90
+    },
+    {
+      "id": 5,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0,
+      "description": "Ceci est une description du produit",
+      "category": "Nom de ma catégorie",
+      "weight": 90
+    }
+  ],
+  "categoryList": ["Nom de ma catégorie", "Deuxième catégorie"],
+  "sold": [
+    {
+      "id": 1,
+      "soldDate": "16/03/2023",
+      "produitId": 1,
+      "productName": "Premier Produit",
+      "soldQuantity": 5,
+      "soldPrice": 500.0
+    },
+    {
+      "id": 2,
+      "soldDate": "16/03/2023",
+      "produitId": 1,
+      "productName": "Premier Produit",
+      "soldQuantity": 20,
+      "soldPrice": 500.0
+    }
+  ],
+  "contracts": {
+    "inActivity": [
+      {
+        "id": 1,
+        "shopId": 1,
+        "shopLink": "/vendeur/1",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      },
+      {
+        "id": 2,
+        "shopId": 2,
+        "shopLink": "/vendeur/2",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      },
+      {
+        "id": 3,
+        "shopId": 3,
+        "shopLink": "/vendeur/3",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      }
+    ],
+    "inDemand": [
+      {
+        "id": 1,
+        "shopId": 1,
+        "shopLink": "/vendeur/1",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      },
+      {
+        "id": 2,
+        "shopId": 2,
+        "shopLink": "/vendeur/2",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      },
+      {
+        "id": 3,
+        "shopId": 3,
+        "shopLink": "/vendeur/3",
+        "dureeContrat": "5 ans",
+        "endDate": "16/07/2023",
+        "timeLeft": "100 jours",
+        "comission": 5.5
+      }
+    ]
+  }
+}

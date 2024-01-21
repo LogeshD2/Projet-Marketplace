@@ -1,0 +1,24 @@
+.demand {
+  text-align: center;
+  margin: auto;
+  /* width: 30%; */
+  background-color: rgb(189, 183, 183);
+  background-size: cover; /* redimensionne l'image pour couvrir tout le fond */
+  padding: 20px; /* ajoute un espacement autour du contenu du contrat */
+  border: 1px solid gray; /* ajoute une bordure grise autour du contrat */
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5); /* ajoute une ombre portée pour donner de la profondeur */
+  font-family: "Times New Roman", Times, serif; /* utilise une police de caractères qui convient mieux à l'apparence d'un document */
+  font-size: 16px; /* ajuste la taille de police */
+  line-height: 1.5; /* ajuste l'espacement entre les lignes */
+  color: #333; /* utilise une couleur de texte qui convient mieux à l'apparence d'un document */
+}
+
+.demand ul {
+  margin: 0; /* suppression des marges par défaut pour la liste */
+  padding: 0; /* suppression des espaces intérieurs par défaut pour la liste */
+  list-style-type: none; /* suppression des puces de la liste */
+}
+
+.demand li {
+  margin-bottom: 5px; /* espace de 5px entre chaque élément de la liste */
+}

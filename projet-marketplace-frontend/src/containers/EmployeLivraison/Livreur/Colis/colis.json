@@ -1,0 +1,28 @@
+[
+  {
+    "IDColis": 47,
+    "IDClient": 31,
+    "Produits": [
+      {
+        "ID": 10,
+        "Nom": "Telephone"
+      },
+      {
+        "ID": 11,
+        "Nom": "Ordinateur"
+      },
+      {
+        "ID": 13,
+        "Nom": "Tissot"
+      },
+      {
+        "ID": 16,
+        "Nom": "Adidas"
+      }
+    ],
+    "modeLivraison": "domicile",
+    "adresseLivraison": "Paris",
+    "DateLivraison": "2023-06-14",
+    "typeVehicule": "voiture"
+  }
+]

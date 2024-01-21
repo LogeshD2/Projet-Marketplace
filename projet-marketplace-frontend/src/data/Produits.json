@@ -1,0 +1,94 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Premier Pronnnnduit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 25,
+      "productPrice": 108.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 2,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 3,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 4,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 5,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 6,
+      "productName": "Premier Produit",
+      "image": "https://ekit.co.uk/GalleryEntries/eCommerce_solutions_and_services/MedRes_Product-presentation-2.jpg?q=27012012153123",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 7,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 8,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 9,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    },
+    {
+      "id": 10,
+      "productName": "Premier Produit",
+      "image": "https://d2aabgjce9enf.cloudfront.net/main/media/content/5/d/5d85c6fc71a6f180e10da000287864e185249b21.jpg",
+      "availableQuantity": 18,
+      "productPrice": 100.0,
+      "soldQuantity": 25,
+      "soldPrice": 25000.0
+    }
+  ]
+}

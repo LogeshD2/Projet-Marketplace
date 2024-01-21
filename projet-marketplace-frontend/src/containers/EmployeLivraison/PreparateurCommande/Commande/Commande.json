@@ -1,0 +1,25 @@
+[
+    {
+        "IDCommande": 45,
+        "IDClient": 31,
+        "Produits": [
+            {
+                "ID": 10,
+                "Nom": "Telephone"
+            },
+            {
+                "ID": 11,
+                "Nom": "Ordinateur"
+            },
+            {
+                "ID": 13,
+                "Nom": "Tissot"
+            },
+            {
+                "ID": 16,
+                "Nom": "Adidas"
+            }
+        ],
+        "nbCartons": 1
+    }
+]

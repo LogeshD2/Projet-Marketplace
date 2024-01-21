@@ -1,0 +1,28 @@
+.Header {
+  background-color: #e0e7eb;
+  padding: 15px;
+}
+
+.Header ul {
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  margin-top: 45px;
+}
+
+.Header li {
+  color: white;
+}
+
+.Header .navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: "center";
+}
+
+.Header img {
+  width: auto;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}

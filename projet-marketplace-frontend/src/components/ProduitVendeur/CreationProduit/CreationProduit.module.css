@@ -1,0 +1,86 @@
+.CreationProduit .newProduct {
+  /* border: 2px solid black; */
+  width: 40%;
+  /* margin: 15%; */
+  text-align: center;
+  padding: 1em;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10%;
+}
+
+.CreationProduit form {
+  width: auto;
+}
+
+.CreationProduit label {
+  font-weight: bold;
+}
+
+.CreationProduit input {
+  margin-top: 10px;
+}
+
+.CreationProduit .category {
+  width: 100%;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 10px;
+  width: 50%;
+  margin-left: 150px;
+}
+
+.CreationProduit .category:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.CreationProduit textarea {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 60%;
+  height: 100px;
+}
+
+.CreationProduit form {
+  align-items: center;
+}
+.CreationProduit input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 15px;
+  outline: none;
+  margin-left: 10px;
+}
+.CreationProduit button {
+  font-size: 16px;
+  padding: 11px 38px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: black;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.CreationProduit b {
+  font-size: 19px;
+}
+.CreationProduit .suggestion {
+  padding: 10px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.CreationProduit .suggestion:hover {
+  background-color: #e9e9e9;
+}
+
+.CreationProduit ul {
+  list-style: none;
+}

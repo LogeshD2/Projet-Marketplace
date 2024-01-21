@@ -1,0 +1,522 @@
+.Accueil .videoContainer {
+  position: relative;
+}
+
+.Accueil .video {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(4px) brightness(80%);
+  border: 1px black solid;
+}
+
+.Accueil .overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.Accueil .flexProduct {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+  justify-content: center;
+}
+
+.Accueil .firstProduct {
+  flex-basis: 60%;
+}
+
+.Accueil .firstProduct img {
+  height: 600px;
+  width: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.Accueil .otherProduct {
+  flex-basis: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.Accueil .otherProduct img {
+  width: auto;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.Accueil .bestProduct .firstProduct {
+  order: 2;
+}
+
+.Accueil .bestProduct .otherProduct {
+  order: 1;
+}
+
+.Accueil .produit,
+.Accueil .categorie {
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin: 0 10px;
+  height: 100%;
+}
+
+.Accueil .produit:hover,
+.Accueil .categorie:hover {
+  background-color: #d6d6d6;
+  transform: scale(1.03);
+}
+
+.Accueil .categorie img {
+  width: auto;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.Accueil .group {
+  position: relative;
+  margin-bottom: 45px;
+}
+.Accueil input {
+  font-size: 40px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 700px;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: transparent;
+  color: white;
+  padding-right: 50px;
+}
+.Accueil input:focus {
+  outline: none;
+  color: white;
+  font-size: 40px;
+}
+/* ---------------------------------------- */
+
+/* LABEL ======================================= */
+.Accueil label {
+  color: white;
+  font-size: 40px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 0px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+
+/* active state */
+.Accueil input:focus ~ label,
+.Accueil input:valid ~ label {
+  top: -20px;
+  font-size: 20px;
+  color: white;
+}
+
+/* BOTTOM BARS ================================= */
+.Accueil .bar {
+  position: relative;
+  display: block;
+  width: 300px;
+}
+.Accueil .bar:before,
+.Accueil .bar:after {
+  content: "";
+  height: 2px;
+  width: 0;
+  bottom: 1px;
+  position: absolute;
+  background: white;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;
+}
+.Accueil .bar:before {
+  left: 50%;
+}
+.Accueil .bar:after {
+  right: 50%;
+}
+
+/* active state */
+.Accueil input:focus ~ .bar:before,
+.Accueil input:focus ~ .bar:after {
+  width: 50%;
+}
+
+/* HIGHLIGHTER ================================== */
+.Accueil .highlight {
+  position: absolute;
+  height: 60%;
+  width: 100px;
+  top: 25%;
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+/* active state */
+.Accueil input:focus ~ .highlight {
+  -webkit-animation: inputHighlighter 0.3s ease;
+  -moz-animation: inputHighlighter 0.3s ease;
+  animation: inputHighlighter 0.3s ease;
+}
+
+/* ANIMATIONS ================ */
+@-webkit-keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@-moz-keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+@keyframes inputHighlighter {
+  from {
+    background: white;
+  }
+  to {
+    width: 0;
+    background: transparent;
+  }
+}
+
+.Accueil .glass {
+  position: fixed;
+  display: block;
+  color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+}
+
+.buttonSlide {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  line-height: 1;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.arrowPrev,
+.arrowNext {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.arrowPrev {
+  left: -5%;
+  z-index: 1;
+}
+
+.arrowNext {
+  right: -5%;
+  z-index: 1;
+}
+
+.Accueil .trait {
+  border: 1px solid rgb(73, 72, 72);
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* ---------------------------------------- */
+
+.cardFirstProduct {
+  position: relative;
+  width: auto;
+  height: 100%;
+  background: #7b1842;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.cardFirstProduct::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  width: 100%;
+  height: 100%;
+  background: #e7f3ff;
+  transform: skewY(345deg);
+  transition: 0.5s;
+}
+
+.cardFirstProduct:hover::before {
+  top: -70%;
+  transform: skewY(390deg);
+}
+
+.cardFirstProduct::after {
+  content: "CY SHOP";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-weight: 600;
+  font-size: 6em;
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.cardFirstProduct .imgBoxFirstProduct {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+.cardFirstProduct .contentBoxFirstProduct {
+  position: relative;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.cardFirstProduct .contentBoxFirstProduct h3 {
+  font-size: 18px;
+  color: white;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cardFirstProduct .contentBoxFirstProduct .priceFirstProduct {
+  font-size: 24px;
+  color: white;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.cardFirstProduct .contentBoxFirstProduct .buyFirstProduct {
+  position: relative;
+  top: 100px;
+  opacity: 0;
+  padding: 10px 30px;
+  margin-top: 15px;
+  color: #000000;
+  text-decoration: none;
+  background: #ffce00;
+  border-radius: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: 0.5s;
+}
+
+.cardFirstProduct:hover .contentBoxFirstProduct .buyFirstProduct {
+  top: 0;
+  opacity: 1;
+}
+
+/* ---------------------------------------- */
+.productsCard {
+  position: relative;
+}
+
+.productsCard .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #e6b325;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.productsCard .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #61481c;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.productsCard .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.productsCard .card:after {
+  content: "CYSHOP";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-size: 5.2em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.productsCard .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.productsCard .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.productsCard .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.productsCard .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.productsCard .card:hover .contentBx {
+  height: 210px;
+}
+
+.productsCard .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.productsCard .card .contentBx .size,
+.productsCard .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.productsCard .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.productsCard .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.productsCard .card .contentBx .size h3,
+.productsCard .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.productsCard .card .contentBx .size span {
+  width: auto;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  padding: 0 10px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.productsCard .card .contentBx .size span:hover {
+  /* other bug */
+  background: #b90000;
+}
+
+.productsCard .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.productsCard .card .contentBx .color span:nth-child(2) {
+  background: #1bbfe9;
+}
+
+.productsCard .card .contentBx .color span:nth-child(3) {
+  background: #1b2fe9;
+}
+
+.productsCard .card .contentBx .color span:nth-child(4) {
+  background: #080481;
+}
+
+.productsCard .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.productsCard .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}

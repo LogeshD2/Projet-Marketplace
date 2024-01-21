@@ -1,0 +1,10 @@
+.NavigationItem a {
+  text-decoration: none;
+  color: black;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:focus,
+.NavigationItem a.active {
+  color: white;
+}

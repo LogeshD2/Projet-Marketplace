@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap");
+.Panier {
+  display: flex;
+  gap: 50px;
+  margin-top: 80px;
+  background-color: #fff;
+}
+
+.Panier .panierProduits {
+  width: 60%;
+  height: 600px;
+  overflow: scroll;
+}
+
+.Panier img {
+  width: 200px;
+  height: 200px;
+}
+
+.Panier .panierProduitDetails {
+  text-align: left;
+  flex: 1;
+  margin-left: 60px;
+  margin-top: 50px;
+}
+.Panier .panierDetails {
+  margin-left: 150px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Panier .panierInput {
+  width: 50px;
+  height: 40px;
+  margin-top: 30px;
+}
+
+.Panier .panierCommander {
+  background-color: #f2f2f2;
+  margin: 20px 0 0 0;
+  padding: 20px;
+  height: 300px;
+  width: 40%;
+}
+
+.Panier .panierCommander h5 {
+  height: auto;
+  margin: 0;
+}
+
+.Panier .panierValider {
+  margin: 50px auto;
+  width: 70%;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s;
+}
+
+.Panier .panierValider:hover {
+  background-color: #c0c0c0;
+}
+
+.Panier select {
+  margin-top: 150px;
+  margin-left: 50px;
+  text-align: center;
+  padding: 15px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
+  width: 550px;
+}
+
+.Panier button {
+  font-size: 16px;
+  padding: 11px 38px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: black;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+
+.panierDetails input {
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 15px;
+  outline: none;
+  margin-left: 10px;
+}

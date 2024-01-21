@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&display=swap");
+
+.Inscription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  font-family: "Roboto Flex", sans-serif;
+  padding-bottom: 3%;
+}
+
+.Inscription form {
+  margin-top: 20px;
+  background-color: #ffff;
+  padding: 40px 60px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.Inscription form h1 {
+  color: #eb7371;
+  text-align: center;
+}
+.Inscription form .social-media {
+  margin-top: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Inscription form .social-media p {
+  padding: 5px;
+  margin-left: 10px;
+  border: 1px solid #545454;
+  border-radius: 100%;
+  width: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.Inscription form p.email {
+  text-align: center;
+}
+
+.Inscription form .input {
+  display: flex;
+  flex-direction: column;
+}
+
+.Inscription form .input input[type="texte"] {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.Inscription form .input input {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 15px;
+  outline: none;
+}
+
+.Inscription form p.inscription {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: grey;
+}
+
+.Inscription form p.inscription span a {
+  color: red;
+  text-decoration: none;
+}
+
+.Inscription form button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  color: white;
+  background-color: red;
+  text-align: right;
+}
+
+.Inscription form .fin {
+  text-align: right;
+}
+
+.Inscription form .input select {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  margin-bottom: 15px;
+  outline: none;
+}

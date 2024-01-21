@@ -1,0 +1,289 @@
+.ProduitCategorie {
+  display: flex;
+  justify-content: space-around;
+}
+.Categories {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  height: 500px;
+  width: 300px;
+  background-color: #f2f2f2;
+}
+.Category {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  flex-grow: 1;
+  width: 300px;
+}
+.Categories h2 {
+  margin-left: 30px;
+}
+.Categories input {
+  margin-left: 30px;
+}
+.Categories label {
+  margin-left: -300px;
+}
+
+.Categories button {
+  width: 70%;
+  text-align: left;
+  font-size: 13px;
+  align-items: center;
+}
+
+.Categories > div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.Categories > div input[type="checkbox"] {
+  margin-right: 10px;
+  outline: none; /* ajout de la propriété outline */
+  margin-right: 20px;
+}
+
+.Categories > div label {
+  margin: 0;
+}
+
+.Categories button {
+  font-size: 16px;
+  padding: 11px 38px;
+  margin-top: 10px;
+  cursor: pointer;
+  border: 0;
+  outline: none;
+  color: black;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.12);
+  margin-left: 20px;
+  margin-bottom: 15px;
+}
+.Produits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.productsList {
+  flex-grow: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Crée 4 colonnes de largeur égale */
+  grid-template-rows: repeat(4, 1fr); /* Crée 4 lignes de hauteur égale */
+  gap: 10px;
+}
+
+.card {
+  margin: 20px;
+  width: 100px;
+  cursor: pointer;
+  align-items: center;
+}
+.contentBx {
+  justify-content: space-between;
+  text-decoration: none;
+}
+.contentBx p {
+  justify-content: space-between;
+  text-decoration: none;
+}
+.buy {
+  margin-right: 0px;
+}
+.imgBx img {
+  width: 200px;
+  height: 150px;
+}
+.price b {
+  font-size: 15px;
+  font-family: cursive;
+}
+
+.productsCard {
+  position: relative;
+}
+
+.productsCard .card {
+  position: relative;
+  width: 320px;
+  height: 450px;
+  background: #e2e2e2;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.productsCard .card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: orange;
+  clip-path: circle(150px at 80% 20%);
+  transition: 0.5s ease-in-out;
+}
+
+.productsCard .card:hover:before {
+  clip-path: circle(300px at 80% -20%);
+}
+
+.productsCard .card:after {
+  content: "CYSHOP";
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  font-size: 5.2em;
+  font-weight: 800;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.04);
+}
+
+.productsCard .card .imgBx {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.productsCard .card:hover .imgBx {
+  top: 0%;
+  transform: translateY(-25%);
+  /* bug  */
+}
+
+.productsCard .card .imgBx img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 270px;
+}
+
+.productsCard .card .contentBx {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  transition: 1s;
+  z-index: 90;
+}
+
+.productsCard .card:hover .contentBx {
+  height: 210px;
+}
+
+.productsCard .card .contentBx h2 {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.productsCard .card .contentBx .size,
+.productsCard .card .contentBx .color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px;
+  transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.productsCard .card:hover .contentBx .size {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.5s;
+}
+
+.productsCard .card:hover .contentBx .color {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0.6s;
+}
+
+.productsCard .card .contentBx .size h3,
+.productsCard .card .contentBx .color h3 {
+  color: white;
+  font-weight: 300;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.productsCard .card .contentBx .size span {
+  width: auto;
+  height: 26px;
+  text-align: center;
+  line-height: 26px;
+  font-size: 14px;
+  display: inline-block;
+  color: #111;
+  background: #fff;
+  margin: 0 5px;
+  padding: 0 10px;
+  transition: 0.5s;
+  color: #111;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.productsCard .card .contentBx .size span:hover {
+  /* other bug */
+  background: #b90000;
+}
+
+.productsCard .card .contentBx .color span {
+  width: 20px;
+  height: 20px;
+  background: #ff0;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.productsCard .card .contentBx .color span:nth-child(2) {
+  background: #1bbfe9;
+}
+
+.productsCard .card .contentBx .color span:nth-child(3) {
+  background: #1b2fe9;
+}
+
+.productsCard .card .contentBx .color span:nth-child(4) {
+  background: #080481;
+}
+
+.productsCard .card .contentBx a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 0.5s;
+}
+
+.productsCard .card:hover .contentBx a {
+  opacity: 1;
+  transform: translateY(0px);
+  transition-delay: 0.7s;
+}
